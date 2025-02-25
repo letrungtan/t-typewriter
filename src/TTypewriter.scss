@@ -1,0 +1,60 @@
+.t-typewriter {
+    // display: inline-flex;
+    visibility: hidden;
+    * {
+      visibility: hidden;
+    }    
+  }
+  @keyframes blink-cursor {
+    0% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .t-hide-cursor {
+    .t-current-typewriter-cursor::after {
+      display: none;
+    }
+  }
+  .t-current-typewriter-cursor {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: inline-flex;
+      width: 2px;
+      background: #ffffff;
+      animation: 1s blink-cursor infinite;
+    }
+  }
+  @keyframes blink-cursor {
+    0% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
