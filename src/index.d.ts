@@ -1,1 +1,1 @@
-declare module 'typewriter-effect-core';
+declare module 't-typewriter';
