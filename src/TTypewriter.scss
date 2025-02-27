@@ -33,10 +33,10 @@
       content: '';
       position: absolute;
       right: 0;
-      top: 0;
       bottom: 0;
       display: inline-flex;
       width: 2px;
+      height: 1lh;
       background: #ffffff;
       animation: 1s blink-cursor infinite;
     }
